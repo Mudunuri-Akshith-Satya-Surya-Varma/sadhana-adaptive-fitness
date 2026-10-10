@@ -1,0 +1,88 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#24170f"><title>Quest Hub | Sādhanā</title><link rel="stylesheet" href="styles.css"><script defer src="app.js"></script></head><body><header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="index.html"><img src="assets/s_dhan_robot_mascot_holding_a_dumbbell.png" alt="Sādhanā mascot"><span><span class="brand-name">SĀDHANĀ</span><span class="brand-sub">FITNESS, YOUR WAY</span></span></a><div class="nav-links" id="navLinks"><a href="index.html" data-nav="index.html" class="active" aria-current="page">⌂ Home</a><a href="quests.html" data-nav="quests.html">⚔ Quests</a><a href="training.html" data-nav="training.html">🏋 Training</a><a href="progress.html" data-nav="progress.html">▥ Progress</a><a href="community.html" data-nav="community.html">♟ Community</a><a href="../index.html" class="public-site-link" title="Return to the Sādhanā public homepage">↗ Website</a></div><div class="nav-right"><span class="stat-chip">🔥 <b data-stat="streak">12</b> <small>Day Streak</small></span><span class="stat-chip">🪙 <b data-stat="aura">4,320</b></span><div class="profile-menu"><button class="profile-trigger" type="button" aria-label="Open profile menu"><img src="assets/player_avatar.png" alt=""> <span>Profile ▾</span></button><div class="profile-dropdown"><a href="profile.html">Profile Overview</a><a href="profile.html#about">About · My Class</a><a href="profile.html#settings">Settings</a></div></div></div><button class="mobile-toggle" aria-expanded="false" aria-controls="navLinks" type="button">☰</button></nav></header>
+<main class="page-wrap home-wrap">
+  <section class="home-welcome">
+    <div class="welcome-copy">
+      <div class="eyebrow">Your journey continues</div>
+      <h1 class="page-title"><span id="greeting">Welcome back</span>, Yashwanth</h1>
+      <p class="page-subtitle">Train for the life you have today. Every session builds real ability.</p>
+      <div class="welcome-actions"><a class="rpg-btn" href="training.html">▶ Begin today's training</a><a class="rpg-btn dark" href="quests.html">View quest journal</a></div>
+    </div>
+    <div class="welcome-art" aria-label="Sādhanā adventure world illustration"><img src="assets/world_scene_crop.jpg" alt="Illustrated Sādhanā training world"><div class="art-caption"><span class="pill green">CURRENT QUEST</span><strong data-current-quest-title>Cardio Foundations</strong><small>12–15 min · Bodyweight</small></div></div>
+  </section>
+
+  <section class="home-quickstats" aria-label="Your current stats">
+    <div class="quickstat"><span class="quickstat-icon">🔥</span><div><small>Day streak</small><strong><span data-stat="streak">12</span> days</strong></div></div>
+    <div class="quickstat"><span class="quickstat-icon">✦</span><div><small>Total Aura</small><strong data-stat="aura">4,320</strong></div></div>
+    <div class="quickstat"><span class="quickstat-icon">✓</span><div><small>Sessions logged</small><strong data-stat="completed">0</strong></div></div>
+    <div class="quickstat"><span class="quickstat-icon">⚔</span><div><small>Assigned class</small><strong><span data-assigned-class-name>Dhruva</span> · Lv. <span data-stat="level">4</span></strong></div></div>
+  </section>
+
+  <section class="wood-panel home-progression-row" aria-labelledby="homeJourneyTitle">
+    <div class="panel-inner">
+      <div class="panel-head"><div><div class="eyebrow">One step at a time</div><h2 id="homeJourneyTitle">Your Dhruva Journey</h2></div><a href="quests.html" class="text-link">Open level tree →</a></div>
+      <div class="home-milestone-list" aria-label="Interactive weekly milestones">
+        <button type="button" class="home-milestone" data-home-node="2"><span class="milestone-number">01</span><span class="milestone-copy"><b>Today's Practice</b><small data-milestone-status="2">Current</small></span><span class="milestone-arrow">↗</span></button>
+        <button type="button" class="home-milestone" data-home-node="3"><span class="milestone-number">02</span><span class="milestone-copy"><b>Stamina Path</b><small data-milestone-status="3">Locked</small></span><span class="milestone-arrow">↗</span></button>
+        <button type="button" class="home-milestone" data-home-node="4"><span class="milestone-number">03</span><span class="milestone-copy"><b>Endurance Trial</b><small data-milestone-status="4">Locked</small></span><span class="milestone-arrow">↗</span></button>
+        <button type="button" class="home-milestone" data-home-node="5"><span class="milestone-number">04</span><span class="milestone-copy"><b>Dhruva Challenge</b><small data-milestone-status="5">Locked</small></span><span class="milestone-arrow">↗</span></button>
+        <button type="button" class="home-milestone" data-home-node="6"><span class="milestone-number">05</span><span class="milestone-copy"><b>Week Finale</b><small data-milestone-status="6">Locked</small></span><span class="milestone-arrow">↗</span></button>
+      </div>
+    </div>
+  </section>
+
+  <div class="home-main-grid">
+    <section class="wood-panel home-quest-panel">
+      <div class="panel-inner">
+        <div class="panel-head"><div><div class="eyebrow">Ready when you are</div><h2>Today's Quest</h2></div><span class="pill">+200 XP</span></div>
+        <div class="today-quest-content"><div class="quest-emblem">⚡</div><div class="today-quest-copy"><h3 data-current-quest-title>Cardio Foundations</h3><p data-current-quest-description>Build steady endurance with a short, adaptable bodyweight session.</p><div class="quest-meta"><span>◷ 12–15 min</span><span>♧ No equipment</span><span>✦ Dhruva path</span></div><div class="meter quest-mini-meter"><span id="homeDailyMeter" style="width:0%"></span></div><small id="homeDailyStatus">Not started today</small></div><div class="today-quest-actions"><a id="homeStartQuest" class="rpg-btn" href="training.html">Start quest →</a><a class="text-link" href="quests.html">Quest details</a></div></div>
+      </div>
+    </section>
+
+    <section class="wood-panel home-class-panel">
+      <div class="panel-inner">
+        <div class="panel-head"><h2>Your Training Path</h2><a href="profile.html#about" class="text-link">About my class →</a></div>
+        <div class="home-class-content"><img data-assigned-class-card src="assets/class_dhruva_designed.jpg" alt="Your assigned class card"><div class="home-class-copy"><span class="pill green">ASSIGNED CLASS</span><h3 data-assigned-class-name>Dhruva</h3><p data-assigned-class-focus>Cardio & Endurance</p><div class="xp-label"><span>Class XP</span><b><span data-stat="progress">6,240</span> / <span data-stat="xpgoal">10,000</span></b></div><div class="meter xp-meter"><span data-stat-bar="xp" style="width:62.4%"></span></div><small>Next milestone: Level <span data-stat="nextlevel">5</span></small></div></div>
+      </div>
+    </section>
+
+    <section class="wood-panel home-active-panel">
+      <div class="panel-inner">
+        <div class="panel-head"><h2>Quest Log</h2><a href="quests.html" class="text-link">See all →</a></div>
+        <div class="home-quest-list">
+          <article class="home-quest-item"><span class="quest-icon">⚡</span><div><strong>Daily quest</strong><small><span data-current-quest-title>Cardio Foundations</span> · 12–15 min</small></div><a class="rpg-btn compact" href="training.html">Start</a></article>
+          <article class="home-quest-item"><span class="quest-icon blue">🛡</span><div><strong>Class quest</strong><small>Complete 3 endurance sessions</small></div><a class="rpg-btn dark compact" href="quests.html">Track</a></article>
+          <article class="home-quest-item"><span class="quest-icon green">🌿</span><div><strong>Recovery check</strong><small>Tell sAI how you're feeling</small></div><button type="button" class="rpg-btn dark compact" data-open-sai data-chat-prompt="Help me check my readiness for today's workout.">Ask sAI</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wood-panel home-map-panel">
+      <div class="panel-inner">
+        <div class="panel-head"><div><h2>Quest Map</h2><small>Week 1 · Your next step is highlighted</small></div><a href="quests.html" class="text-link">Open map →</a></div>
+        <div class="home-map-link home-map-interactive" aria-label="Interactive quest map preview"><img src="assets/quest_tree_designed.jpg" alt="Your illustrated quest tree. Select a milestone to see its status.">
+          <div class="home-map-nodes" aria-label="Quest map milestone buttons">
+            <button type="button" data-home-node="0" style="left:7.5%;top:41.2%" aria-label="Profile assessed milestone"></button>
+            <button type="button" data-home-node="1" style="left:17.6%;top:60.8%" aria-label="Assigned class milestone"></button>
+            <button type="button" data-home-node="2" style="left:31.8%;top:72.7%" aria-label="Today's practice milestone"></button>
+            <button type="button" data-home-node="3" style="left:48.1%;top:60%" aria-label="Stamina path milestone"></button>
+            <button type="button" data-home-node="4" style="left:66%;top:51%" aria-label="Endurance trial milestone"></button>
+            <button type="button" data-home-node="5" style="left:85.7%;top:23.3%" aria-label="Dhruva challenge milestone"></button>
+            <button type="button" data-home-node="6" style="left:83.7%;top:74.7%" aria-label="Week finale milestone"></button>
+          </div>
+          <a class="map-open-label" href="quests.html">Explore quest map <b>↗</b></a>
+        </div>
+        <div class="map-legend"><span><i class="legend-dot"></i> Completed</span><span><i class="legend-dot current"></i> Current</span><span><i class="legend-dot locked"></i> Locked</span></div>
+        <div class="map-weekly-note"><div><strong>Weekly direction</strong><small>Endurance focus, supported by mobility and strength.</small></div><span class="pill" data-stat="weekcount">3 / 5 sessions</span></div>
+        <a href="quests.html" class="rpg-btn dark map-full-button">Explore all milestones →</a>
+      </div>
+    </section>
+  </div>
+  <section class="home-sai-strip">
+    <button class="sai-face-button" type="button" data-open-sai aria-label="Open sAI fitness coach chat"><img src="assets/sai_robot_in_its_idle_pose.webp" alt="sAI robot coach"></button>
+    <div><strong>Need a hand, adventurer?</strong><p>Ask sAI to adapt your session, explain an exercise, or help you reflect on your progress.</p></div>
+    <button class="rpg-btn" type="button" data-open-sai>Chat with sAI ↗</button>
+  </section>
+</main>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<footer class="footer">SĀDHANĀ · Adapt to the person. Challenge the person. Develop the person.</footer>
+</body></html>

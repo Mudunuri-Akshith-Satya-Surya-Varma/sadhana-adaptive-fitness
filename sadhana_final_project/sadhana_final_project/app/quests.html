@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#24170f"><title>Quests & Level Tree | Sādhanā</title><link rel="stylesheet" href="styles.css"><script defer src="app.js"></script></head><body><header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="index.html"><img src="assets/s_dhan_robot_mascot_holding_a_dumbbell.png" alt="Sādhanā mascot"><span><span class="brand-name">SĀDHANĀ</span><span class="brand-sub">FITNESS, YOUR WAY</span></span></a><div class="nav-links" id="navLinks"><a href="index.html" data-nav="index.html">⌂ Home</a><a href="quests.html" data-nav="quests.html" class="active" aria-current="page">⚔ Quests</a><a href="training.html" data-nav="training.html">🏋 Training</a><a href="progress.html" data-nav="progress.html">▥ Progress</a><a href="community.html" data-nav="community.html">♟ Community</a><a href="../index.html" class="public-site-link" title="Return to the Sādhanā public homepage">↗ Website</a></div><div class="nav-right"><span class="stat-chip">🔥 <b data-stat="streak">12</b> <small>Day Streak</small></span><span class="stat-chip">🪙 <b data-stat="aura">4,320</b></span><div class="profile-menu"><button class="profile-trigger" type="button" aria-label="Open profile menu"><img src="assets/player_avatar.png" alt=""> <span>Profile ▾</span></button><div class="profile-dropdown"><a href="profile.html">Profile Overview</a><a href="profile.html#about">About · My Class</a><a href="profile.html#settings">Settings</a></div></div></div><button class="mobile-toggle" aria-expanded="false" aria-controls="navLinks" type="button">☰</button></nav></header><main class="page-wrap quests-wrap">
+  <div class="page-heading"><div><div class="eyebrow">Every session moves you forward</div><h1 class="page-title">Quest Journal & Level Tree</h1><p class="page-subtitle">Complete training to earn XP, advance your weekly path, and work toward the next Dhruva level. Locked nodes open as you progress.</p></div><a class="rpg-btn" href="training.html">▶ Begin today's quest</a></div>
+
+  <section class="wood-panel xp-overview" aria-labelledby="xpOverviewTitle"><div class="panel-inner">
+    <div class="xp-overview-top"><div><span class="pill green">SYSTEM-ASSIGNED CLASS · <span data-assigned-class-name>Dhruva</span></span><h2 id="xpOverviewTitle">Class Experience</h2><p class="muted small">XP comes from completed sessions and meaningful progression—not from selecting a class.</p></div><div class="xp-level-badge"><small>CURRENT LEVEL</small><strong>Lv. <span data-stat="level">4</span></strong></div></div>
+    <div class="xp-progress-heading"><strong><span data-stat="progress">6,240</span> / <span data-stat="xpgoal">10,000</span> XP</strong><span><b data-stat="xpremaining">3,760</b> XP until Level <b data-stat="nextlevel">5</b> · <b data-stat="xppercent">62%</b></span></div>
+    <div class="meter xp-large-meter" role="progressbar" aria-label="XP progress to next level" aria-valuemin="0" aria-valuemax="10000" aria-valuenow="6240"><span data-stat-bar="xp" style="width:62.4%"></span></div>
+    <div class="xp-foot"><span>✦ Aura: <b data-stat="aura">4,320</b></span><span>🛡 Completed workouts: <b data-stat="completed">0</b></span><span>🔥 Week <b data-stat="week">1</b> · <b data-stat="weekSessions">0</b>/5 sessions</span></div>
+  </div></section>
+
+  <div class="quests-layout">
+    <section class="wood-panel quest-tree-panel"><div class="panel-inner">
+      <div class="panel-head"><div><div class="eyebrow"><span data-assigned-class-name>Dhruva</span> · <span data-assigned-class-focus>Cardio & endurance</span></div><h2>Quest Map · Week <span data-stat="week">1</span></h2></div><small>Select any marker</small></div>
+      <div class="interactive-quest-map" id="questTree" aria-label="Interactive quest milestone tree">
+        <img class="quest-tree-background" src="assets/quest_tree_designed.jpg" alt="Illustrated Sādhanā quest tree with paths and milestone markers">
+        <button type="button" class="quest-map-node" data-map-node="0" style="left:7.5%;top:41.2%"><span class="sr-only">Profile assessed</span></button>
+        <button type="button" class="quest-map-node" data-map-node="1" style="left:17.6%;top:60.8%"><span class="sr-only">Class assigned</span></button>
+        <button type="button" class="quest-map-node" data-map-node="2" style="left:31.8%;top:72.7%"><span class="sr-only">Today's practice</span></button>
+        <button type="button" class="quest-map-node" data-map-node="3" style="left:48.1%;top:60%"><span class="sr-only">Stamina path</span></button>
+        <button type="button" class="quest-map-node" data-map-node="4" style="left:66%;top:51%"><span class="sr-only">Endurance trial</span></button>
+        <button type="button" class="quest-map-node" data-map-node="5" style="left:85.7%;top:23.3%"><span class="sr-only">Dhruva challenge</span></button>
+        <button type="button" class="quest-map-node" data-map-node="6" style="left:83.7%;top:74.7%"><span class="sr-only">Week finale</span></button>
+      </div>
+      <div class="map-legend"><span><i class="legend-dot"></i> Completed</span><span><i class="legend-dot current"></i> Current</span><span><i class="legend-dot locked"></i> Locked</span></div>
+      <p class="map-help small muted">The first two milestones reflect profile assessment and class assignment. Each completed workout advances the current weekly milestone. Finishing five sessions unlocks the next week's path.</p>
+    </div></section>
+
+    <aside class="wood-panel quest-detail-panel"><div class="panel-inner">
+      <div class="panel-head"><div><div class="eyebrow">Selected milestone</div><h2 id="selectedNodeTitle">Today's Practice</h2></div><span class="pill green" id="selectedNodeStatus">CURRENT</span></div>
+      <p id="selectedNodeDescription">Complete today's adaptive workout to earn XP and move to the next node.</p>
+      <div class="node-requirement"><span class="quest-emblem">⚔</span><div><b id="selectedNodeGoal">Complete one workout</b><small id="selectedNodeReward">+200 XP / Aura · advances your weekly path</small></div></div>
+      <a id="selectedNodeAction" class="rpg-btn" href="training.html">Start today's quest →</a>
+      <p id="nodeLockedHint" class="locked-hint small muted" hidden>Complete the current workout milestone to unlock this part of the path.</p>
+      <div class="node-detail-foot"><a href="progress.html" class="text-link">View session history →</a><a href="profile.html#about" class="text-link">About my class →</a></div>
+    </div></aside>
+  </div>
+
+  <section class="wood-panel week-challenges"><div class="panel-inner"><div class="panel-head"><div><div class="eyebrow">Support all five fitness components</div><h2>Weekly Direction</h2></div><span class="pill" data-stat="weekcount">3 / 5 sessions</span></div><div class="week-direction-grid">
+    <article><span class="direction-icon">🏃</span><b>Endurance</b><p>Primary Dhruva focus · steady pacing and stamina.</p></article>
+    <article><span class="direction-icon">🏋</span><b>Strength</b><p>Supporting work to maintain whole-body capacity.</p></article>
+    <article><span class="direction-icon">🌿</span><b>Mobility & balance</b><p>Supporting work for movement quality and control.</p></article>
+  </div></div></section>
+</main><div id="toast" class="toast" role="status" aria-live="polite"></div><footer class="footer">SĀDHANĀ · Adapt to the person. Challenge the person. Develop the person.</footer></body></html>
